@@ -1,0 +1,116 @@
+body {
+  font-family: "poppins";
+  background-color: #131730;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul > li {
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.container > div {
+  margin: 1em;
+}
+
+.container_1 {
+  background-color: #1b2042;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.container_2 {
+  background-color: #1b2042;
+  border-radius: 10px;
+  padding: 1em;
+  position: relative;
+  margin-top: 2em;
+  top: 100px;
+}
+
+.back_color {
+  background: linear-gradient(#4aa2f7, #4aa1f6);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  z-index: -1;
+  bottom: 200px;
+  right: 20px;
+}
+
+.border {
+  display: flex;
+}
+
+.border > .borders {
+  border-radius: 25px;
+  width: 40px;
+  height: 20px;
+  margin: 2px;
+}
+/* ! with col */
+.first {
+  background-color: #4b65ff;
+}
+
+.second {
+  background-color: #4c8bff;
+}
+
+.third {
+  background-color: #4ca7fe;
+}
+
+.fourth {
+  background-color: #4abdf2;
+}
+
+.fifth {
+  background-color: #48d3ea;
+}
+
+.sixth {
+  background-color: #4fdfd8;
+}
+/* ! With colors end*/
+/* ! WIthout colors */
+.seventh,
+.eighth,
+.ninth {
+  background-color: #11152e;
+}
+/* ! WIthout colors end */
+
+@media screen and (max-width: 650px) {
+  body {
+    overflow: visible;
+  }
+
+  .container_1 {
+    margin: 0;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  .container_2 {
+    position: relative;
+    top: 0;
+  }
+}
